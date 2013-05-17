@@ -13,3 +13,66 @@ Jonathan Wade
 #landingPage {
 	background-color: #25ACEF;
 }
+
+.researchContent {
+    margin: 15px;
+    list-style-type: none;
+}
+
+.researchContent p {
+    text-indent: 5px;
+    padding: 10px;
+}
+
+.researchContent article h4 {
+   padding: 10px;
+   background-color: rgba(37, 172, 239, 0.50);
+   border-radius: 15px;
+}
+
+.textWrap {
+	float:left;
+	margin-top: 18px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;
+}
+
+#twitData p {
+	font-family: Helvetica;
+	font-size: 1em;
+	text-indent: 2px;
+}
+
+#twitData p i {
+	font-size: .5em;
+	margin: 10px 0px 0px -3px;
+	display: block;
+}
+
+#twitData h3 {
+	position: absolute;
+	right:20px;
+	bottom: 10px;
+	padding:10px;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Bandsintown API Styling :: ran into issues getting the CSS
+ to accept my calls so I had to stop and move on :( */
+
+#bandPic {
+	float: left;
+	height: 200px;
+	width: 200px;
+	margin: 8px;
+	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;	
+}
+
+.eventStyle h1 {
+	position: absolute;
+	right: 25;
+	top: 10;
+}
