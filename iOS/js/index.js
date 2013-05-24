@@ -114,3 +114,183 @@ $("#localShows").on( "change", function() {
 		            $("#eventData").listview("refresh");
             });
 });
+
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+
+
+// Geolocation 
+
+$("#geoComp").on("pageinit", function(){
+
+$("#findMe").on("click", function(){
+     
+     $("#mapView").empty();
+                                         	
+ 	var onSuccess = function(position) {
+ 	
+ 		var latitude = position.coords.latitude,
+ 			longitude = position.coords.longitude;
+ 			
+ 		
+ 		$('<img src="http://maps.googleapis.com/maps/api/staticmap?size=400x400&markers=color:blue%7Clabel:!%7C' + latitude + ',' + longitude +'&maptype=hybrid&sensor=true" />').appendTo($("#mapView"));
+ 			
+ 	
+};
+
+// onError Callback receives a PositionError object
+//
+function onError(error) {
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+}
+
+
+
+navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+
+
+});
+
+       
+});
+
+
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+
+// Camera
+
+
+$("#camComp").on("pageinit", function(){
+
+
+ 	var pictureSource;   
+    var destinationType; 
+
+
+   
+        pictureSource = navigator.camera.PictureSourceType;
+        destinationType = navigator.camera.DestinationType;
+   
+
+  
+    function onPhotoURISuccess(imageURI) {
+      
+
+      // Set image element id
+     
+      var largeImage = document.getElementById('largeImage');
+
+      // Dislay image html elements
+      
+      largeImage.style.display = 'block';
+
+      // Show photo
+ 
+      largeImage.src = imageURI;
+      
+      
+      
+    }
+
+    
+    function capturePhoto() {
+
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+
+ 
+    function capturePhotoEdit() {
+      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string  
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 20, allowEdit: true,
+        destinationType: destinationType.FILE_URI });
+    }
+
+
+    function getPhoto(source) {
+      // Retrieve image file location from specified source
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
+        destinationType: destinationType.FILE_URI,
+        sourceType: source });
+    }
+
+
+    function onFail(message) {
+      // No Fail message by design
+    }
+
+
+
+
+$("#snapEdit").on("click", function(){
+     capturePhotoEdit();
+});
+
+$("#fromLibrary").on("click", function(){
+    getPhoto(pictureSource.PHOTOLIBRARY);   
+});
+
+$("#fromAlbum").on("click", function(){
+    getPhoto(pictureSource.SAVEDPHOTOALBUM);  
+});
+
+
+
+//End of camComp page
+});
+
+
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+
+
+//In App Browser
+
+
+$("#inAppBrowser").on("pageinit", function(){
+	
+	$("#inAppGo").on("click", function(){
+		var urlLocal = $("#urlBar").val();
+		var ref = window.open( urlLocal, '_blank', 'location=yes');
+		ref.addEventListener('loadstart', function() { alert(event.url); });
+        
+});
+
+//End of inAppBrowser       
+});
+
+
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+//*************************************************************************
+
+//Notifications
+
+$("#notiComp").on("pageinit", function(){
+       
+   
+ $("#notifyNow").on("click", function(){
+       
+	           navigator.notification.alert('You pushed that button like a champ!');
+	           
+    }); 
+    
+       
+// End of Notification Page       
+});
+
+
+
+       
+
+

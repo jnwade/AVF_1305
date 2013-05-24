@@ -140,6 +140,30 @@
                 <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
 			</header>
             
+            <section class="researchContent">
+                
+                <article>
+                    <h4>Some of the ways that I could improve my HTML to make it more accessible:</h4>
+                        <p>Carefully planned and consistently structured semantic mark-up. It would be beneficial to establish a consistent work flow that utilized the various mark up tools in HTML5.</p>
+                        <br/>
+                        <p>Some of the common frustrations have to do with the organization of the content on the page. As developers or designers, we tend to take for granted our ability to see the page and trade logical structure for more visually appealing layouts. This can lead to confusion for visitors using screen readers.</p>
+                        <br/>
+                        <p>I decided to conduct a little research. I was curious to see if it were possible to detect when a user is using a screen reader on your site. I was thinking that one could dynamically adjust the layout of the content based on a simple Boolean: screeenReader === true; What I discovered is that it’s a little more complicated than that. As it stands there really isn’t a way to do this consistently, and it appears that it may even be a violation of privacy since it would disclose whether or not a visitor to your site had a disability. That said, I really appreciate this assignment. Accessibility wasn’t really something I was thinking much about, but in hind site it’s absolutely crucial, AND the right thing to do.</p>
+                        <br/>
+                        <p>I know I’m not going to be alone in my first selection, but Apple’s VoiceOver software is terrific. Not only is it easy to use but it’s really robust. I actually took some time to go through the VoiceOver guided tutorial and was really impressed with what I found. Some features include the “Track Pad Commander” which allows a user to control the screen reader using multitouch gestures on the trackpad. It also comes preinstalled with over 70 drivers for various refreshable braille displays so users can simply plug and play.</p>
+                        <br/>
+                        <p> Another device that I thought was really awesome is called “Access4Kids.” It’s an assistive input device that provides children with limited upper-body motor control, access to rehabilitation applications via touch screen devices. It uses three sensors that collect a series of inputs that the children are capable of doing, and converts them into the standard multitouch inputs we all take for granted.</p>
+                        <br/>
+                        <p>There are some really terrific applications out there that are designed exclusively for accessibility. The two that I chose to write about are “BrailleTouch” and “soundAMP.”</p>
+                        <br/>
+                        <p>BrailleTouch allows users to type in braille using their touch screen phones. The phone is held with the screen facing away and the user positions their fingers in braille patterns along the edges of the screen to type.</p>
+                        <br/>
+                        <p> soundAMP converts a users smart phone into a listening device. Users can amplify their surroundings using their own earbuds and smartphone.</p>
+                </article>
+                        
+            </section>
+            
+            
         </div>
         
         <div data-role="page" id="researchwk3">
@@ -178,13 +202,10 @@
                         <a href="#geoComp"><h3>Geolocation</h3></a>
                     </li>
                     <li>
+                        <a href="#inAppBrowser"><h3>In App Browser</h3></a>
+                    </li>
+                    <li>
                         <a href="#notiComp"><h3>Notifications</h3></a>
-                    </li>
-                    <li>
-                        <a href="#mediaComp"><h3>Media</h3></a>
-                    </li>
-                    <li>
-                        <a href="#contaComp"><h3>Contacts</h3></a>
                     </li>
                     
 				</ul>
@@ -202,7 +223,23 @@
                 <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
 			</header>
             
-             <!-- Body of page will be here -->
+            <article id="camHeader">
+            	<h1>Take a picture!</h1>
+            	<p>Tap the button below to snap a shot with your devices camera!</p>
+            </article>
+            
+            <a href="#" id="snapEdit" data-role="button" data-icon="check" data-mini="true" data-inline="true" data-iconpos="right">Snap a picture</a>
+            <a href="#" id="fromLibrary" data-role="button" data-icon="check" data-mini="true" data-inline="true" data-iconpos="right">Select from Library</a>
+            <a href="#" id="fromAlbum" data-role="button" data-icon="check" data-mini="true" data-inline="true" data-iconpos="right">Select from Album</a>
+            
+            <img style="display:none;width:400px;height:400px;" id="largeImage" src="" />
+
+            <article id="picView">
+            
+            <!-- Image data will be placed here dynamically -->
+            
+            </article>
+
             
         </div>
         
@@ -213,40 +250,51 @@
                 <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
 			</header>
             
-             <!-- Body of page will be here -->
+            <article id="geoHeader">
+            	<h1>Where are you?</h1>
+            	<p>Tap the button below to find out!</p>
+            </article>
+            
+            <a href="#" id="findMe" data-role="button" data-icon="search" data-mini="true" data-inline="true" data-iconpos="right">Where am I?</a>
+            
+            <article id="mapView">
+            
+            <!-- Map html will be placed here dynamically -->
+            
+            </article>
             
         </div>
+        
+        <div data-role="page" id="inAppBrowser">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>In App Browser</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+            <header>
+            	<h1>Rather be somewhere else?</h1>
+            	<p><strong>What are you waiting for!?</strong> Use this in app browser to escape!</p>
+            	
+            </header>
+            	
+            
+            <section>
+            	<input type="url" id="urlBar" data-inline="true" placeholder="http://www.desiredsite.com" val="">
+            	<a href="#" id="inAppGo" data-role="button" data-icon="search" data-mini="true" data-inline="true" data-iconpos="right">Go!</a>
+            </section>
+        </div>
+        
         
         <div data-role="page" id="notiComp">
-            <header data-role="header">
-				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
-				<h2>Notifications</h2>
-                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
-			</header>
-            
-            <!-- Body of page will be here --> 
-            
-        </div>
-        
-        <div data-role="page" id="MediaComp">
-            <header data-role="header">
-				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
-				<h2>Media</h2>
-                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
-			</header>
-            
-             <!-- Body of page will be here -->
-            
-        </div>
-        
-        <div data-role="page" id="contaComp">
             <header data-role="header">
 				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
 				<h2>Contacts</h2>
                 <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
 			</header>
             
-            <!-- Body of page will be here -->
+			<button type="button" id="notifyNow" data-icon="grid"  data-iconpos="right">Push this button!</button>
+            
             
         </div>
         

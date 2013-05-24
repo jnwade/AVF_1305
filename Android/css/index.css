@@ -76,3 +76,24 @@ Jonathan Wade
 	right: 25;
 	top: 10;
 }
+
+#mapView img {
+	position: relative;
+	padding-left: 20%;
+	padding-right: 20%;
+	
+}
+
+#geoComp article {
+   padding: 10px;
+   background-color: rgba(37, 172, 239, 0.50);
+   border-radius: 15px;
+   text-align: center;
+}
+
+#camComp img {
+	position: relative;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
