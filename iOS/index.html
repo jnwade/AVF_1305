@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <!--
-AVF 1305
+ AVF 1305
  Jonathan Wade
--->
+ -->
 <!DOCTYPE HTML>
 <html>
     <head>
         
         <title>AVF 1305 iOS app</title>
         
-        <link rel="stylesheet" type="text/css" href="css/jqm.css" />
+        
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jqm.css" />
         
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jqm.js"></script>
@@ -18,17 +19,15 @@ AVF 1305
     </head>
     <body>
         
-        <!-- Landing Page -->
+        <!--******* Landing Page **********-->
+        
         <div data-role="page" id="landingPage">
             
-            
-           <img src="img/AVF_Logo.png" alt="Jonathan Wade AVF1305" id="mainLogo"/>
-
-
+            <img src="img/AVF_Logo.png" alt="Jonathan Wade AVF1305" id="mainLogo"/>
             
             <section class="navigation">
             	<ul data-role="listview">
-					 <li><a href="#researchTopics">
+                    <li><a href="#researchTopics">
 						<img src="img/research_icon.png" />
 						<h3>Research Topics</h3>
 						<p>One per week</p>
@@ -44,15 +43,264 @@ AVF 1305
 						<p>A glorious sea of data</p>
 					</a></li>
 				</ul>
-            </section> 
-            
-          
-         
-            
-           
+            </section>
         </div>
         
+        
+        <!--******* Research Topics ***********-->
+        
         <div data-role="page" id="researchTopics">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Research Topics</h2>
+			</header>
+            
+            <section class="navigation">
+            	<ul data-role="listview">
+                    <li><a href="#researchwk1">
+						<img src="img/wk1.png" />
+						<h3>Discuss: Data Research, Project Intent</h3>
+					</a></li>
+					<li><a href="#researchwk2">
+						<img src="img/wk2.png" />
+						<h3>Discuss: Accessibility</h3>
+					</a></li>
+					<li><a href="#researchwk3">
+						<img src="img/wk3.png" />
+						<h3>Discuss: Industry Research</h3>
+					</a></li>
+					<li><a href="#researchwk4">
+						<img src="img/wk4.png" />
+						<h3>Personal Notes</h3>
+					</a></li>
+				</ul>
+            </section>
+        </div>
+        
+        
+        <!-- ******** Reasearch Pages ********** -->
+        
+        <div data-role="page" id="researchwk1">
+        	<header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Research Week 1</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+            <section class="researchContent">
+                
+                <article>
+                    <h4>Less obvious perks of using 'live' data resources include logins and payments. How could Twitter be used in these two scenarios?</h4>
+                    <ol>
+                        <li><b>Regarding Payments:</b> One could use Twitter to send an automatic tweet to followers once a purchase has been made. It could also just be given as an option upon a successful checkout.</li>
+                        <br/>
+                        <li><b>Regarding Logging in:</b> You could allow a user to authenticate into your service or app using their twitter credentials. This is convenient to people who use Twitter because it means that they don&#39;t have to create another user account to keep track of.</li>
+                    </ol>
+                </article>
+                
+                <article>
+                    <h4>Visit Programmableweb.com and search for JSON-P data sources. Why would we need JSON-P, specifically?</h4>
+                    <li>
+                        <p>Due to the Same Origin Policy, normal JSON data requests that are made to a server outside of the server the application is running on is denied. JSON-P allows us to retrieve JSON from outside sources using the &#60;script&#62; tag.</p>
+                    </li>
+                </article>
+                
+                <article>
+                    <h4>Based on the JSON-P search results: what data resource(s) do you think might pair well with which types of Native device features?</h4>
+                    <ol>
+                        <li><b>Camera</b> - Flickr, Instagram</li>
+                        <li><b>Geolocation</b> - Foursquare, Bandsintown</li>
+                        <li><b>Notifications</b> - Etsy, Facebook, Twitter</li>
+                        <li><b>Media</b> - Vimeo</li>
+                        <li><b>Contacts</b> - LinkedIn</li>
+                    </ol>
+                </article>
+                
+                <article>
+                    <h4>Please describe any design and functionality intentions you may have for your Demo app components this month.</h4>
+                    <li>
+                        <p>I&#39;m considering using an API called &#34;Bandsintown.&#34; This API allows users to view local concert schedules and view live music recommendations. I think it&#39;d be a great mash-up with Twitter. You could use it to locate local shows around town and then subscribe to the twitter feeds of the bands you&#39;re interested in seeing. This could be a fun way to get to know the band a little before actually going to see them live. Who knows, it may even give you some things to talk to the band about. </p>
+                    </li>
+                </article>
+                
+                <article>
+                    <h4>Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.</h4>
+                    <li>
+                        <p>I&#39;ve got a habit of wanting things to look nice right out of the gate. I&#39;m learning that I need to get the base functionality working first before I start to concern myself with the apps aesthetics. I&#39;ve also learned to do my research and design ahead of time. It&#39;s so much easier to implement an idea when I know what it is I&#39;m going for and how exactly I&#39;d like to accomplish it. Even when things don&#39;t go exactly as planned I have an idea of where I’m at and can come up with solutions faster. Now even though I&#39;ve learned this, I&#39;m still working on implementing it. </p>
+                    </li>
+                </article>
+                        
+            </section>
+        </div>
+        
+        <div data-role="page" id="researchwk2">
+        	<header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Research Week 2</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+            <section class="researchContent">
+                
+                <article>
+                    <h4>Some of the ways that I could improve my HTML to make it more accessible:</h4>
+                        <p>Carefully planned and consistently structured semantic mark-up. It would be beneficial to establish a consistent work flow that utilized the various mark up tools in HTML5.</p>
+                        <br/>
+                        <p>Some of the common frustrations have to do with the organization of the content on the page. As developers or designers, we tend to take for granted our ability to see the page and trade logical structure for more visually appealing layouts. This can lead to confusion for visitors using screen readers.</p>
+                        <br/>
+                        <p>I decided to conduct a little research. I was curious to see if it were possible to detect when a user is using a screen reader on your site. I was thinking that one could dynamically adjust the layout of the content based on a simple Boolean: screeenReader === true; What I discovered is that it’s a little more complicated than that. As it stands there really isn’t a way to do this consistently, and it appears that it may even be a violation of privacy since it would disclose whether or not a visitor to your site had a disability. That said, I really appreciate this assignment. Accessibility wasn’t really something I was thinking much about, but in hind site it’s absolutely crucial, AND the right thing to do.</p>
+                        <br/>
+                        <p>I know I’m not going to be alone in my first selection, but Apple’s VoiceOver software is terrific. Not only is it easy to use but it’s really robust. I actually took some time to go through the VoiceOver guided tutorial and was really impressed with what I found. Some features include the “Track Pad Commander” which allows a user to control the screen reader using multitouch gestures on the trackpad. It also comes preinstalled with over 70 drivers for various refreshable braille displays so users can simply plug and play.</p>
+                        <br/>
+                        <p> Another device that I thought was really awesome is called “Access4Kids.” It’s an assistive input device that provides children with limited upper-body motor control, access to rehabilitation applications via touch screen devices. It uses three sensors that collect a series of inputs that the children are capable of doing, and converts them into the standard multitouch inputs we all take for granted.</p>
+                        <br/>
+                        <p>There are some really terrific applications out there that are designed exclusively for accessibility. The two that I chose to write about are “BrailleTouch” and “soundAMP.”</p>
+                        <br/>
+                        <p>BrailleTouch allows users to type in braille using their touch screen phones. The phone is held with the screen facing away and the user positions their fingers in braille patterns along the edges of the screen to type.</p>
+                        <br/>
+                        <p> soundAMP converts a users smart phone into a listening device. Users can amplify their surroundings using their own earbuds and smartphone.</p>
+                </article>
+                        
+            </section>
+            
+            
+        </div>
+        
+        <div data-role="page" id="researchwk3">
+        	<header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Research Week 3</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+        </div>
+        
+        
+        <div data-role="page" id="researchwk4">
+        	<header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Personal Notes Week 4</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+        </div>
+        
+        <!-- ********* Native Components Page ************ -->
+        
+        <div data-role="page" id="nativeComps">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Native Components</h2>
+			</header>
+            
+            <section class="navigation">
+            	<ul data-role="listview">
+                    <li>
+                        <a href="#camComp"><h3>Camera</h3></a>
+                    </li>
+                    <li>
+                        <a href="#geoComp"><h3>Geolocation</h3></a>
+                    </li>
+                    <li>
+                        <a href="#inAppBrowser"><h3>In App Browser</h3></a>
+                    </li>
+                    <li>
+                        <a href="#notiComp"><h3>Notifications</h3></a>
+                    </li>
+                    
+				</ul>
+            </section>
+            
+            
+        </div>
+        
+        <!-- *********** Component Pages *********** -->
+        
+        <div data-role="page" id="camComp">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Camera</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+            <article id="camHeader">
+            	<h1>Take a picture!</h1>
+            	<p>Tap the button below to snap a shot with your devices camera!</p>
+            </article>
+            
+            <a href="#" id="snapEdit" data-role="button" data-icon="check" data-mini="true" data-inline="true" data-iconpos="right">Snap a picture</a>
+            <a href="#" id="fromLibrary" data-role="button" data-icon="check" data-mini="true" data-inline="true" data-iconpos="right">Select from Library</a>
+            <a href="#" id="fromAlbum" data-role="button" data-icon="check" data-mini="true" data-inline="true" data-iconpos="right">Select from Album</a>
+            
+            <img style="display:none;width:400px;height:400px;" id="largeImage" src="" />
+
+            <article id="picView">
+            
+            <!-- Image data will be placed here dynamically -->
+            
+            </article>
+
+            
+        </div>
+        
+        <div data-role="page" id="geoComp">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Geolocation</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+            <article id="geoHeader">
+            	<h1>Where are you?</h1>
+            	<p>Tap the button below to find out!</p>
+            </article>
+            
+            <a href="#" id="findMe" data-role="button" data-icon="search" data-mini="true" data-inline="true" data-iconpos="right">Where am I?</a>
+            
+            <article id="mapView">
+            
+            <!-- Map html will be placed here dynamically -->
+            
+            </article>
+            
+        </div>
+        
+        <div data-role="page" id="inAppBrowser">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>In App Browser</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+            <header>
+            	<h1>Rather be somewhere else?</h1>
+            	<p><strong>What are you waiting for!?</strong> Use this in app browser to escape!</p>
+            	
+            </header>
+            	
+            
+            <section>
+            	<input type="url" id="urlBar" data-inline="true" placeholder="http://www.desiredsite.com" val="">
+            	<a href="#" id="inAppGo" data-role="button" data-icon="search" data-mini="true" data-inline="true" data-iconpos="right">Go!</a>
+            </section>
+        </div>
+        
+        
+        <div data-role="page" id="notiComp">
+            <header data-role="header">
+				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
+				<h2>Contacts</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
+			</header>
+            
+			<button type="button" id="notifyNow" data-icon="grid"  data-iconpos="right">Push this button!</button>
+            
+            
+        </div>
+        
+        <!--******** API Data Page ************ -->
+        
+        <div data-role="page" id="apiData">
             <header data-role="header">
 				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
 				<span class="ui-title" />
@@ -60,97 +308,56 @@ AVF 1305
             
             <section class="navigation">
             	<ul data-role="listview">
-					 <li><a href="#researchwk1">
-						<img src="img/wk1.png" />
-						<h3>Topic Name will go here</h3>
-						<p>Description here</p>
-					</a></li>
-					<li><a href="#researchwk2">
-						<img src="img/wk2.png" />
-						<h3>Topic Name will go here</h3>
-						<p>Description here</p>
-					</a></li>
-					<li><a href="#researchwk3">
-						<img src="img/wk3.png" />
-						<h3>Topic Name will go here</h3>
-						<p>Description here</p>
-					</a></li>
-					<li><a href="#researchwk4">
-						<img src="img/wk4.png" />
-						<h3>Topic Name will go here</h3>
-						<p>Description here</p>
-					</a></li>
+                    <li>
+                        <a href="#twitAPI"><h3>Twitter</h3></a>
+                    </li>
+                    <li>
+                        <a href="#bandsinAPI"><h3>Bandsintown</h3></a>
+                    </li>
 				</ul>
-            </section> 
-            
-           
+            </section>           
         </div>
         
-        <div data-role="page" id="researchwk1">
-        	<header data-role="header">
+        <!--******** API Pages ***********-->
+        
+        <div data-role="page" id="twitAPI">
+            <header data-role="header">
 				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
-				<span class="ui-title" />
+				<h2>Twitter API</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
 			</header>
-        
+            
+            <label for="twitSearch" class="ui-hidden-accessible">Search:</label>
+            <input type="text" name="twitSearch" id="twitSearch" placeholder="What are you looking for?" value="" data-clear-btn="true" />
+                      
+            <section class="ui-grid-a" id="twitData">
+            	
+            </section>
         </div>
         
-        <div data-role="page" id="researchwk2">
-        	<header data-role="header">
+        <div data-role="page" id="bandsinAPI">
+            <header data-role="header">
 				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
-				<span class="ui-title" />
+				<h2>Bandsintown API</h2>
+                <a href="#landingPage" data-iconpos="notext" data-icon="home">Home</a>
 			</header>
-        
-        </div>
-        
-        <div data-role="page" id="researchwk3">
-        	<header data-role="header">
-				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
-				<span class="ui-title" />
-			</header>
-        
-        </div>
-        
-        
-        <div data-role="page" id="researchwk4">
-        	<header data-role="header">
-				<a href="#landingPage" data-rel="back" data-iconpos="notext" data-icon="back" class="ui-btn-left"></a>
-				<span class="ui-title" />
-			</header>
-        
-        </div>
-        
-        <div data-role="page" id="nativeComps">
             
-           
-            
-           
+            <label for="localShows" class="ui-hidden-accessible">Search:</label>
+            <input type="text" name="localShows" id="localShows" placeholder="Who would you like to see?" value="" data-clear-btn="true" />
+                     
+            <section id="eventData">
+            	
+            </section>          
         </div>
         
-        <div data-role="page" id="apiData">
-            
-            
-                       
-           
-        </div>
         
-               
-        
-        
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        <!-- <script type="text/javascript" src="cordova-2.7.0.js"></script> -->
+      
+        <script type="text/javascript" src="cordova-2.7.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-      <!--
-  <script type="text/javascript">
+        
+        <script type="text/javascript">
             app.initialize();
-        </script>
--->
+            </script>
+        
     </body>
 </html>

@@ -3,6 +3,8 @@ AVF 1305
 Jonathan Wade
  */
 
+
+
 #mainLogo {
 	position: relative;
 	padding-left: 20%;
@@ -13,3 +15,99 @@ Jonathan Wade
 #landingPage {
 	background-color: #25ACEF;
 }
+
+.researchContent {
+    margin: 15px;
+    list-style-type: none;
+}
+
+.researchContent p {
+    text-indent: 5px;
+    padding: 10px;
+}
+
+.researchContent article h4 {
+   padding: 10px;
+   background-color: rgba(37, 172, 239, 0.50);
+   border-radius: 15px;
+}
+
+.textWrap {
+	float:left;
+	margin-top: 18px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;
+}
+
+#twitData p {
+	font-family: Helvetica;
+	font-size: 1em;
+	text-indent: 2px;
+}
+
+#twitData p i {
+	font-size: .5em;
+	margin: 10px 0px 0px -3px;
+	display: block;
+}
+
+#twitData h3 {
+	position: absolute;
+	right:20px;
+	bottom: 10px;
+	padding:10px;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+
+#bandPic {
+	float: left;
+	position: absolute;
+	top: 110px;
+	height: 125px;
+	width: 125px;
+	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;	
+}
+
+#deets h1 {
+	font-size: 1.3em;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+	font-family: "Abadi MT Condensed Light";
+}
+
+
+
+#deets {
+	position: relative;
+	right: -40px;
+	text-align: center;
+	padding: 19px 44px 0px 0px; 
+	
+}
+
+
+
+#mapView img {
+	position: relative;
+	padding-left: 20%;
+	padding-right: 20%;
+	
+}
+
+#geoComp article {
+   padding: 10px;
+   background-color: rgba(37, 172, 239, 0.50);
+   border-radius: 15px;
+   text-align: center;
+}
+
+#camComp img {
+	position: relative;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
