@@ -3,6 +3,8 @@ AVF 1305
 Jonathan Wade
  */
 
+
+
 #mainLogo {
 	position: relative;
 	padding-left: 20%;
@@ -59,23 +61,35 @@ Jonathan Wade
 	text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
 
-/* Bandsintown API Styling :: ran into issues getting the CSS
- to accept my calls so I had to stop and move on :( */
+
 
 #bandPic {
 	float: left;
-	height: 200px;
-	width: 200px;
-	margin: 8px;
+	position: absolute;
+	top: 110px;
+	height: 125px;
+	width: 125px;
 	-webkit-box-shadow: 3px 3px 3px #7C7C7C;
     box-shadow: 3px 3px 3px #7C7C7C;	
 }
 
-.eventStyle h1 {
-	position: absolute;
-	right: 25;
-	top: 10;
+#deets h1 {
+	font-size: 1.3em;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+	font-family: "Abadi MT Condensed Light";
 }
+
+
+
+#deets {
+	position: relative;
+	right: -40px;
+	text-align: center;
+	padding: 19px 44px 0px 0px; 
+	
+}
+
+
 
 #mapView img {
 	position: relative;
